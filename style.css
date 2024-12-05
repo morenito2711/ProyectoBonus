@@ -1,0 +1,178 @@
+
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos de la página*/
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilos para la sección del título */
+.title_section {
+    background-image: url(images/developer.png); /* Imagen de fondo */
+    min-height: 100vh; /* Altura mínima del 100% de la ventana */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Escala la imagen de fondo para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  }
+  
+  /* Contenedor de texto en la sección de héroe */
+  .text_container {
+    color: rgb(242, 244, 249); /* Color del texto */
+    max-width: 900px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding-top: 64px; /* Espaciado superior */
+    padding-left: 16px; /* Espaciado izquierdo */
+  }
+  
+  /* Estilos para el texto grande */
+  .lg_text {
+    font-size: 77px; /* Tamaño de fuente */
+    font-weight: 7000; /* Peso de fuente normal */
+  }
+
+  /* Sección de caja negra con título */
+.black_box {
+    background-color: #000; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  /* Estilos para el título en la caja negra */
+  .black_box h2 {
+    font-size: 100px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    font-weight: 500; /* Peso de fuente ligero */
+  }
+  
+  /* Estilos para el texto resaltado en el título */
+  .black_box h2 span {
+    font-weight: 400; /* Peso de fuente normal */
+    font-size: 96px; /* Tamaño de fuente */
+  }
+
+  /* Sección de trabajos */
+.work {
+    display: grid; /* Grid para alineación */
+    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Columnas flexibles */
+    max-width: 1100px; /* Ancho máximo */
+    margin: 50px auto; /* Margen superior e inferior y centra el contenedor */
+  }
+  
+  /* Estilos para cada elemento de la cuadrícula */
+  .grid_item {
+    display: flex; /* Flexbox para alineación */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alineación vertical */
+  }
+  
+  /* Estilos para las tarjetas */
+  .card {
+    max-width: 320px; /* Ancho máximo */
+    height: 400px; /* Altura fija */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2); /* Sombra de caja */
+    transition: 0.2s ease-in-out; /* Transición suave */
+  }
+  
+  /* Efecto al pasar el ratón sobre las tarjetas */
+  .card:hover {
+    transform: scale(1.04); /* Escala la tarjeta */
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3); /* Sombra de caja */
+    transition: 0.2s ease-in-out; /* Transición suave */
+  }
+  
+  /* Contenido de las tarjetas */
+  .card_content {
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  /* Estilos para el título dentro de las tarjetas */
+  .card_content h3 {
+    margin-bottom: 10px; /* Margen inferior */
+  }
+
+  /* Sección inferior con contacto y sobre mí */
+.bottom_section {
+    display: flex; /* Flexbox para alineación */
+  }
+  
+  /* Estilos para la sección de contacto */
+  .contact {
+    background-color: #1c7102; /* Color de fondo */
+  }
+  
+  /* Estilos para la sección sobre mí */
+  .about {
+    background-color: #005072; /* Color de fondo */
+  }
+  
+  /* Estilos comunes para las secciones de contacto y sobre mí */
+  .contact,
+  .about {
+    min-height: 300px; /* Altura mínima */
+    padding: 32px; /* Espaciado interno */
+    color: white; /* Color del texto */
+  }
+  
+  /* Estilos para los títulos en las secciones de contacto y sobre mí */
+  .about h2,
+  .contact h2 {
+    font-size: 64px; /* Tamaño de fuente */
+    font-weight: 300; /* Peso de fuente ligero */
+  }
+  
+  /* Estilos para los párrafos en las secciones de contacto y sobre mí */
+  .about p,
+  .contact p {
+    margin-bottom: 20px; /* Margen inferior */
+  }
+
+  footer {
+    text-align: center; /* Centra el texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    background-color: #000; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+  }
+
+  /* Media Queries para dispositivos móviles */
+@media (max-width: 786px) {
+    .hero_section {
+      min-height: 50vh; /* Altura mínima del 50% de la ventana */
+    }
+    .text_container {
+      padding: 10px 0; /* Espaciado superior e inferior */
+      text-align: center; /* Centra el texto */
+    }
+    .lg_text {
+      font-size: 32px; /* Tamaño de fuente */
+    }
+    .black_box h2 {
+      font-size: 24px; /* Tamaño de fuente */
+    }
+    .black_box h2 span {
+      font-weight: 400; /* Peso de fuente normal */
+      font-size: 32px; /* Tamaño de fuente */
+    }
+    .bottom_section {
+      flex-direction: column; /* Dirección de los elementos en columna */
+    }
+    h1 {
+      font-size: 32px; /* Tamaño de fuente */
+    }
+    .about h2,
+    .contact h2 {
+      font-size: 32px; /* Tamaño de fuente */
+    }
+  }
